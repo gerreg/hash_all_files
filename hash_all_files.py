@@ -65,7 +65,7 @@ def write_out(out_file, q_o: Queue, hash_types):
             data = q_o.get()
             if not data:
                 break
-            f.write(";".join(data) + "\n")
+            f.write(";".join([str(x) for x in data]) + "\n")
 
 
 ######################################################################################
