@@ -128,7 +128,7 @@ def main():
     ##########################################
     print("*" * 50)
     print("Starting with:")
-    print("Outupu file:", path.abspath(args.output_file.name))
+    print("Output file:", path.abspath(args.output_file.name))
     print("Path:", g_path)
     print("Used hashes:", ", ".join(hashes_types))
     if 0 < args.w < number_of_cpu:
